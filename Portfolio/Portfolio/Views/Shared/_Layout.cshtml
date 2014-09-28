@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!-- main containter of all the page elements-->
+    <div id="wrapper">
+        <!-- header of the page-->
+        <header id="header">
+            <div class="logo">
+                <a href="/"><h1>Anthony M Jones</h1></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li><a href="@Url.Action("Index", "About")">About</a></li>
+                    <li><a href="@Url.Action("Index", "Work")">Work</a></li>
+                    <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        @RenderBody()
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+        <div id="footer">
+            <div id="copyright">
+                <h6>Copyright 2014 Anthony M Jones</h6>
+            </div>
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li><a href="@Url.Action("Index", "About")">About</a></li>
+                    <li><a href="@Url.Action("Index", "Work")">Work</a></li>
+                    <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>
