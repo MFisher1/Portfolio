@@ -6,26 +6,42 @@
 }
 #wrapper {
     width: 100%;
+    min-height: 100%;
 }
 header, footer, nav, section {
     display: block;
 }
+a {
+    text-decoration:none;
+    color: #fff;
+    font-weight:400;
+    transition: all .7s;
+}
+a:hover {
+    font-weight: 900;
+
+}
 
 #header {
     float:left;
-    border: 1px solid black;
     padding: 2px 2px 2px 2px;
-    width: 99.6%;
+    margin-left: -7.8px;
+    margin-top: -7.8px;
+    width: 100.5%;
     height: 130px;
+    background-color: #005BFF;
+    border: 2px solid #005BFF;
 
 }
 .logo {
     float: left;
+    margin: 0 0 0 10px;
 }
 #footer {
-    margin: 10px auto;
-    border: 1px solid black;
-    width: 100%;
+    margin: -1px 0 -10px -7.8px ;
+    background-color: #005BFF;
+    border: 2px solid #005BFF;
+    width: 100.5%;
     height: 40px;
     padding: 2px 2px 2px 2px;
 }
@@ -40,26 +56,34 @@ header, footer, nav, section {
     
 }
 #nav ul li {
-    border: 1px solid black;
+    border: 0px solid white;
     float: left;
-    padding: 4px;
+    padding: 17px;
     text-align:center;
     vertical-align: bottom;
+    font-size: large;
     list-style: none;
-    width: 110px;
-    height: 20px;
-    margin: 5% 5% 5% 5%;
+    width: 200px;
+    height: 18px;
+    margin: 5% 1% 5% 1%;
+    transition: all .8s;
+}
+#nav ul li:hover {
+    background-color: #232323;
+    width: 250px;   
 }
 #copyright {
     float: left;
+    color: #fff;
 }
 .container{
-    border: 1px solid black;
-    height: 890px;
+    border: 1px solid white;
+    background-color: #232323;
+    min-height: 890px;
     width: 100%;
 }
 .div1 {
-    border: 1px solid black;
+    border: 0px solid black;
     display: inline-block;
     width: 99.8%;
     margin: 10px 0 2px 0;
@@ -68,32 +92,55 @@ header, footer, nav, section {
 }
 .div1 img{
     float:left;
-    width: 99.9%;
-    border: 1px solid black;
+    width: 100.2%;
+    border: 0px solid black;
 }
 #left, #center, #right {
-    border: 1px solid black;
+    border: 1px solid #fff;
     float: left;
-    padding: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 5px;
     width: 200px;
+    height: 50px;
+    background-color: #232323;
+    color: #fff;
+    overflow:hidden;
+    transition: all 2s;
+}
+#left:hover, #center:hover, #right:hover {
     height: 220px;
 }
 #left {
-    margin: 10px 5px 5px 27%;
+    margin: 20px 5px 5px 27%;
 }
 #center{
-    margin: 10px 5px 5px 5px;
+    margin: 20px 5px 5px 5px;
 }
 #right{
-    margin: 10px 5px 5px 5px;
+    margin: 20px 5px 5px 5px;
+}
+#thankyou {
+    border: 1px solid #fff;
+    float: left;
+    padding: 2px 2px 2px 2px;
+    width: 200px;
+    height: 120px;
+    background-color: #232323;
+    color: #fff;
+    margin: 10px 5px 5px 10px;
+
 }
 #aboutmecontent{
-    border:1px solid black;
+    border:0px solid black;
+    background-color: #232323;
     margin: 140px 5px 5px 5px;
-    padding: 2px 2px 2px 2px;
+    padding: 5px 50px 2px 50px;
+    color: #fff;
+    text-align: center;
 }
 #work1, #work2, #work3, #work4{
-    border: 1px solid black;
+    border: 1px solid #fff;
+    background-color: #232323;
+    color: #fff;    
     padding: 2px 2px 2px 2px;
     height: 250px;
     width: 300px;
@@ -114,21 +161,30 @@ header, footer, nav, section {
     margin: 40px 10px 10px 10px;
 }
 #work1 img, #work2 img, #work3 img, #work4 img {
-    border: 1px solid black;
+    border: 0px solid black;
     height: auto;
     width: 280px;
-    margin: 2px 2px 2px 8px;
+    margin: 2px 2px 2px 2px;
 }
 
 .contactform{
     float: left;
-    width: 30%;
+    width: 40%;
+    height: 550px;
     margin: 10px 10px 10px 10px;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
+    border: 0px solid black;
+    background-color: #232323;
+    color: #fff;
+    padding: 10px 10px 10px 50px;
 }
 label{
-    display:block;  
+     
+}
+.name {
+    display:inline-block;
+}
+.contactinfo {
+    display:inline; 
 }
 
 /* Styles for basic forms
@@ -145,7 +201,10 @@ legend {
 }
 
 textarea {
-    min-height: 75px;
+    height: 150px;
+    width: 530px;
+    resize: none;
+    
 }
 
 .editor-label {
