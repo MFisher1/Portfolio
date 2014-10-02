@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="http://i.imgur.com/5SylnbU.png">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -13,14 +14,14 @@
         <!-- header of the page-->
         <header id="header">
             <div class="logo">
-                <a href="/"><h1>Anthony M Jones</h1></a>
+                <a href="@Url.Action("Index", "Home")"><h1>Anthony M Jones</h1></a>
             </div>
             <nav id="nav">
                 <ul>
-                    <a href="@Url.Action("Index", "Home")"><li>Home</li></a>
-                    <a href="@Url.Action("Index", "About")"><li>About</li></a>
-                    <a href="@Url.Action("Index", "Work")"><li>Work</li></a>
-                    <a href="@Url.Action("Index", "Contact")"><li>Contact</li></a>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li><a href="@Url.Action("Index", "About")">About</a></li>
+                    <li><a href="@Url.Action("Index", "Work")">Work</a></li>
+                    <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,7 +32,7 @@
         @RenderSection("scripts", required: false)
         <div id="footer">
             <div id="copyright">
-                <h6>Copyright 2014 Anthony M Jones</h6>
+                <h6>© 2014 Anthony M Jones</h6>
             </div>
                 <ul>
                     <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>

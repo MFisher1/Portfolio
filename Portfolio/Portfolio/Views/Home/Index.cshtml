@@ -4,18 +4,27 @@
 
 <div class="container">
     <div class="div1">
-        <img src="http://i.imgur.com/lftCm2x.png" />
+        <img src="http://i.imgur.com/nBCyxSy.png" />
     </div>
-    <div id="left">
-        <a href="/About"><h3>About Me</h3></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero purus, pellentesque vel imperdiet a, convallis nec tellus. Donec eu quam id libero rhoncus porta ut sit amet odio. Aliquam facilisis nunc justo, ut commodo nisl interdum sed. Duis accumsan velit nec nibh tincidunt facilisis. </p>
+    <a href="@Url.Action("Index", "About")">
+        <div id="frontpagebox">
+            <h3>About Me</h3>
+            <br /><br />
+            <p>Click About to learn about me.</p>
+        </div>
+    </a>
+    <a href="@Url.Action("Index", "Work")">
+    <div id="frontpagebox1">
+        <h3>Work</h3>
+        <br /><br />
+        <p>Click Work to see my work.</p>
     </div>
-    <div id="center">
-        <a href="/Work"><h3>Work</h3></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero purus, pellentesque vel imperdiet a, convallis nec tellus. Donec eu quam id libero rhoncus porta ut sit amet odio. Aliquam facilisis nunc justo, ut commodo nisl interdum sed. Duis accumsan velit nec nibh tincidunt facilisis. </p>
-    </div>
-    <div id="right">
-        <a href="/Contact"><h3>Contact</h3></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero purus, pellentesque vel imperdiet a, convallis nec tellus. Donec eu quam id libero rhoncus porta ut sit amet odio. Aliquam facilisis nunc justo, ut commodo nisl interdum sed. Duis accumsan velit nec nibh tincidunt facilisis. </p>
-    </div>
+    </a>
+    <a href="@Url.Action("Index", "Contact")">
+        <div id="frontpagebox2">
+            <h3>Contact</h3>
+            <br /><br />
+            <p>Click Contact to contact me.</p>
+        </div>
+    </a>
 </div>

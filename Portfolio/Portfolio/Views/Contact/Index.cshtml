@@ -9,39 +9,33 @@
 }
 
 <div class="contactform">
-    <h2>Contact Form</h2>
+    <h2>Contact Me!</h2>
     <form action="@Url.Action("Index","Contact")" method="post">
-        <div class="name">
+        <div class="input">
             <!--create label, then text box, then validation for each property you want to display-->
-            First Name&nbsp &nbsp &nbsp
-            @Html.TextBoxFor(x => x.FirstName)
             @Html.ValidationMessageFor(x => x.FirstName)
+            @Html.TextBoxFor(x => x.FirstName, new { @placeholder = "First Name" })
         </div>
-        <div class="name">
-            Last Name &nbsp &nbsp &nbsp &nbsp
-            @Html.TextBoxFor(x => x.LastName)
+        <div class="input">
             @Html.ValidationMessageFor(x => x.LastName)
+            @Html.TextBoxFor(x => x.LastName, new { @placeholder = "Last Name" })
         </div>
-        <div class="contactinfo">
-            <br />
-            <br />
-            Email Address
-            @Html.TextBoxFor(x => x.Email)
+        <div class="input">
             @Html.ValidationMessageFor(x => x.Email)
+            @Html.TextBoxFor(x => x.Email, new { @placeholder = "Email Address" })
         </div>
-        <div class="contactinfo">
-            Phone Number 
-            @Html.TextBoxFor(x => x.PhoneNumber)
+        <div class="input">
             @Html.ValidationMessageFor(x => x.PhoneNumber)
+            @Html.TextBoxFor(x => x.PhoneNumber, new { @placeholder = "Phone Number" })
         </div>
-        <div>
-            <br /><br />
-            Comments&nbsp &nbsp &nbsp
-            @Html.TextAreaFor(x => x.Comment)
+        <div class="input">
             @Html.ValidationMessageFor(x => x.Comment)
+            @Html.TextAreaFor(x => x.Comment, new { @placeholder = "Comment" })
         </div>
         <br />
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Submit" />
+        <div id="submit">
+            <input type="submit" value="Submit" />
+        </div>
     </form>
 </div>
     </div>

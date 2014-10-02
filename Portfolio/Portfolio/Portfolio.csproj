@@ -244,6 +244,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -262,6 +263,10 @@
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\ThankYou.cshtml" />
+    <Content Include="Views\Work\Battleship.cshtml" />
+    <Content Include="Views\Work\TheWakingDead.cshtml" />
+    <Content Include="Views\Work\HangMan.cshtml" />
+    <Content Include="Views\Work\GuessThatNumber.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

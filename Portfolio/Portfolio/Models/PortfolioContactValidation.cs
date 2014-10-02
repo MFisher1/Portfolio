@@ -18,7 +18,7 @@ namespace Portfolio.Models
         public string LastName { get; set; }
         [Required,EmailAddress]
         public string Email { get; set; }
-        [Required,Phone]
+        [Phone]
         public string PhoneNumber { get; set; }
         [Required]
         public string Comment { get; set; }

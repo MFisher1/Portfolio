@@ -15,6 +15,22 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+        public ActionResult Battleship()
+        {
+            return View();
+        }
+        public ActionResult TheWakingDead()
+        {
+            return View();
+        }
+        public ActionResult HangMan()
+        {
+            return View();
+        }
+        public ActionResult GuessThatNumber()
+        {
+            return View();
+        }
 
     }
 }
